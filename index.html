@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zentara Hotels</title>
+    <link rel="icon" href="./assets/favicon.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libertinus+Mono&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Orbitron:wght@400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libertinus+Mono&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Orbitron:wght@400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<script>
+  if (localStorage.getItem("theme") === "dark") {
+    document.documentElement.classList.add("dark-theme");     // for fast loading of theme and removing the transition
+  }
+</script>
+</head>
+<body>
+   <section >
+    <button id="theme-toggle">🌙 Dark Mode</button>
+    <div id="message-box" class="hidden"><p>❌ <span>Location</span> is not Selected</p></div>
+    <div  class="hero">
+    <nav class="navbar">
+        <div class="nav-link flex">
+            <img src="./assets/logo.png" alt="logo" height="60px" width="80px">
+            <div id="hamburger" class="hamburger-icon">
+                ☰ <!-- ☰ symbol -->
+        </div>
+
+        <div class="slidebar">
+
+            <ul class="nav-menu">
+                    <li><button  class="nav-button2">our hotels</button> </li>
+                    <li><button  class="nav-button2">offers</button></li>
+                    <li><button  class="nav-button2">about us</button></li>
+                    <li><button class="nav-button2">membership</button></li>
+                    <li><button class="nav-button2">login/join</button></li>
+                    <li ><button class="primary-button2 primary-button">Book Stay</button></li>
+                </ul>
+        </div>
+        <ul class="nav-buttons flex">
+             <li><button id="btn-1" class="nav-button">our hotels</button> </li>
+             <li><button id="btn-2" class="nav-button">offers</button></li>
+            <li><button id="btn-3" class="nav-button">about us</button></li>
+            <li><button class="nav-button">membership</button></li>
+            <li><button class="nav-button">login/join</button></li>
+            <li ><button class="primary-button">Book Stay</button></li>
+        </ul>
+        </div>
+    </nav>
+    </div>
+
+    <div id="bookn"class="booking grid-container">
+        <div  class="banner-book flexc">
+            <h3>BOOK<br> YOUR <br>STAY</h3>
+        </div>
+        <div class=" text-utility flexc ">
+            <label for="locat">location▾</label>
+            <select id="locat">
+                <option value="" disabled selected>Select Location</option>
+                <option value="goa">Goa</option>
+                <option value="delhi">Delhi</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="bangalore">Bangalore</option>
+            </select>
+        </div>
+        <div class=" text-utility flexc ">
+            <label for="checki">check in</label>
+            <form >
+                <input class="input-box"type="date" id="checki" >
+            </form>
+        </div>
+        <div class=" text-utility flexc ">
+            <label for="checko">check out</label>
+            <form >
+                <input class="input-box" type="date" id="checko" >
+            </form>
+        </div>
+        <div class=" text-utility flexc">
+            <button id="final-book" class="primary-button">book stay</button>
+        </div>
+    </div>
+   </section> 
+
+   <section id="features" class="features-section">
+
+    <div class="heading-bar">
+        <img src="./assets/luxuary.png"height="100px" width="100px"  alt="luxuary icon">
+        <h2 class="head-text">Zentara reimagines </br> <span>luxury </span></h2>
+        <p class="para-text">More than just a stay, we offer thoughtfully designed spaces, soul-soothing ambience, and curated experiences that inspire connection, calm, and clarity.
+            Zentara isn’t just where you stay It’s where you arrive, reset, and truly belong.</p>
+            
+        </div>
+        
+        <div class="feature-box ">
+            <div class="box1 flexc flex_sizing">
+                <img src="./assets/vecteezy_cartoon-snowflake-decoration-winter-christmas-festival_34917082.png" alt="snowflake icon" height="70px" width="70px">
+                <h3> Unwind</h3>
+                <p class="transition1">Where city noise fades and clarity begins.
+                    Our spaces soothe the senses, so every stay feels like an exhale.
+                    </p>
+                <h4 class="transition1">Infinity Pool / Aromatherapy Rooms / Sunset Lounge</h4>
+            </div>
+            <div class="box2 flexc  flex_sizing">
+                <img src="./assets/leaf-128.png" alt="leaf" height="70px" width="70px">
+                <h3> Stay</h3>
+                <p class="transition1">You don’t just sleep you recharge.
+                Calming tones, and everything you need to feel human again.
+                    </p>
+                    <h4 class="transition1">Skyline Suites / Ambient Lighting / Organic Linens</h4>
+        </div>
+        <div class="box3 flexc flex_sizing">
+                <img src="./assets/horizon.png" alt="horizon" height="70px" width="70px">
+                <h3> Reset</h3>
+                <p class="transition1">Let go, tune in, and come back to yourself.
+                For those who seek more than comfort they seek clarity.
+                </p>
+                <h4 class="transition1">Spa Rituals / Guided Breathwork / Digital Detox Zones</h4>
+        </div>
+    </div>
+
+   </section>
+
+   <section id="signature" class="signature-section">
+    <div class="signature-div flex">
+        <h2 class="signature-head-text" >—Signature Gathering</h2>
+        <p class="signature-para-text">An emblem of elegance, connection, and curated experiences.At Zentara, hosting isn’t just about space — it’s a story told through design, ambiance, and deliberate attention to detail.</p>
+    </div>
+    <div class="signature-img flex">
+        <div class="collection">
+            <img class="image-styling" src="./assets/signature secction/melloo-b6oNgut3ZJA-unsplash.jpg">
+            <h3>Zenith Hall</h3>
+            <p>Where vision meets precision.Elegant boardroom layouts and dynamic AV setups blend productivity with poise.</p>
+        </div>
+        <div class="collection">
+        <img class="image-styling" src="./assets/signature secction/terrace.jpg">
+            <h3>Eclipse Terrace</h3>
+            <p>Open‑air luxe under starlight. Skylit, cocktail receptions, or evening gala dinners with ambient soundscapes.</p>
+        </div>
+        <div class="collection">
+        <img class="image-styling" src="./assets/signature secction/dining.jpg">
+            <h3>Convene & Curate</h3>
+            <p>Design-led spaces for mindful gatherings.Soft lighting, curated décor, and artisanal touches elevate intimate meetups.</p>
+            </div>
+    </div>
+   </section>
+
+<section id="footer">
+    <div class="footer-img">
+    </div>
+    <div class="footer-div flexc">
+        <div class="footer-texts ">
+            <p>subscribe for latest updates</p>
+            <div class="input ">
+                <input class="input-email" type="text" placeholder="ENTER YOUR EMAIL">
+                <button id="emailb" class="primary-button2">SUBSCRIBE</button>
+            </div>
+        </div>
+        <footer >
+            <p>@copyright Deepak</p>
+        </footer>
+    </div>
+   
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="./index.js"></script>
+</body>
+</html>
